@@ -1,0 +1,10 @@
+@import '../assets/scss/variables.scss';
+.overlay {
+    background-color:  $glob-overlay-grey;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}

@@ -6,6 +6,8 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { HeaderComponent } from './header/header.component';
 import { BannerComponent } from './banner/banner.component';
 import { UnauthorizedComponent } from './unauthorized/unauthorized.component';
+import { SharedModule } from 'src/app/shared/shared.module';
+import { LayoutRoutingModule } from './layout-routing.module';
 
 
 
@@ -19,7 +21,9 @@ import { UnauthorizedComponent } from './unauthorized/unauthorized.component';
     UnauthorizedComponent
   ],
   imports: [
-    CommonModule
+    LayoutRoutingModule,
+    CommonModule,
+    SharedModule
   ]
 })
 export class LayoutModule { }
