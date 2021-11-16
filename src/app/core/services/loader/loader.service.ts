@@ -8,7 +8,7 @@ export class LoaderService {
 
   constructor() { }
 
-  private isLoading = new BehaviorSubject(false);
+  public isLoading = new BehaviorSubject(false);
   
   show(value: boolean) {
     this.isLoading.next(value);

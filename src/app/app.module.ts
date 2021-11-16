@@ -8,6 +8,8 @@ import { environment } from '../environments/environment';
 import { SharedModule } from './shared/shared.module';
 import { CoreModule } from './core/core.module';
 import { StoreModule } from '@ngrx/store';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ErrorModule } from './core/error/error.module';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { StoreModule } from '@ngrx/store';
     }),
     SharedModule,
     CoreModule,
-    StoreModule.forRoot({}, {})
+    StoreModule.forRoot({}, {}),
+    ErrorModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
