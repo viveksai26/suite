@@ -2,3 +2,39 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+@mixin mobile-landscape-and-up {
+    @media (min-width: 600px) {
+        @content;
+    }
+}
+
+@mixin Desktop {
+    @media (min-width: 1025px) {
+        @content;
+    }
+}
+@mixin LargeDesktop {
+    @media (min-width: 1025px) {
+        @content;
+    }
+}
+
+
+.main-side-nav-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: auto;
+    height: 100vh;
+    -webkit-overflow-scrolling: touch;
+}
+ .layout-wrapper {
+     margin-right: 15px;
+     margin-bottom: 10px;
+ }
+

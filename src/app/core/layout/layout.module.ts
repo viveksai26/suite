@@ -8,6 +8,7 @@ import { BannerComponent } from './banner/banner.component';
 import { UnauthorizedComponent } from './unauthorized/unauthorized.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { LayoutRoutingModule } from './layout-routing.module';
+import { ProfileComponent } from './profile/profile.component';
 
 
 
@@ -18,7 +19,8 @@ import { LayoutRoutingModule } from './layout-routing.module';
     NavigationComponent,
     HeaderComponent,
     BannerComponent,
-    UnauthorizedComponent
+    UnauthorizedComponent,
+    ProfileComponent
   ],
   imports: [
     LayoutRoutingModule,
